@@ -30,3 +30,8 @@ ul{
     padding: 20px;
     text-align: center;
 }
+.box:hover{
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+}

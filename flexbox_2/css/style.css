@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.container{
+    width: 90%;
+    min-height: 40rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 3px solid #222;
+    background-color: #fff;
+
+    /* Activa Flexbox en el contenedor */
+    display: flex;
+
+    /* Direccion de los elementos:
+       row -> horizontal
+       row-reverse -> horizontal al reves
+       column -> vertical
+       column-reverse -> vertical al reves */
+    flex-direction: row;
+
+    /* Permite o no que los hijos bajen de linea:
+       nowrap -> todos en una sola linea
+       wrap -> saltan a otra linea si no caben
+       wrap-reverse -> saltan, pero en orden inverso */
+    flex-wrap: wrap;
+
+    /* Atajo de flex-direction + flex-wrap */
+    /* flex-flow: row wrap; */
+
+    /* Alinea los hijos en el eje principal:
+       flex-start -> al inicio
+       center -> al centro
+       flex-end -> al final
+       space-between -> espacio entre cajas
+       space-around -> espacio alrededor
+       space-evenly -> mismo espacio para todos */
+    justify-content: space-evenly;
+
+    /* Alinea los hijos en el eje secundario:
+       stretch -> estira
+       flex-start -> arriba/inicio
+       center -> centro
+       flex-end -> abajo/final
+       baseline -> alinea por la linea del texto */
+    align-items: center;
+
+    /* Alinea varias filas cuando hay wrap:
+       flex-start, center, flex-end,
+       space-between, space-around, space-evenly, stretch */
+    align-content: center;
+
+    /* Espacio entre elementos */
+    gap: 1rem;
+
+    /* Tambien puedes usar:
+       row-gap: 1rem;
+       column-gap: 2rem; */
+}
+.box{
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: 2px solid #222;
+    list-style: none;
+
+    /* Propiedades de los hijos flex */
+
+    /* flex-grow: cuanto crece si sobra espacio */
+    flex-grow: 1;
+
+    /* flex-shrink: cuanto se encoge si falta espacio */
+    flex-shrink: 1;
+
+    /* flex-basis: tamano base antes de crecer o encoger */
+    flex-basis: 120px;
+
+    /* Atajo de grow + shrink + basis */
+    /* flex: 1 1 120px; */
+
+    /* Cambia el orden visual del elemento */
+    order: 0;
+
+    /* Alinea solo este hijo distinto a los demas:
+       auto, flex-start, center, flex-end, stretch, baseline */
+    /* align-self: center; */
+}
+
+/* Ejemplos individuales para entender mejor cada propiedad */
+.box:nth-child(1){
+    background-color: #e63946;
+    /* Este crece mas que los demas */
+    flex-grow: 2;
+}
+
+.box:nth-child(2){
+    background-color: #457b9d;
+    /* Este comienza con mayor ancho */
+    flex-basis: 180px;
+}
+
+.box:nth-child(3){
+    background-color: #1d3557;
+    /* Este cambia de posicion visual */
+    order: -1;
+}
+
+.box:nth-child(4){
+    background-color: #f4a261;
+    /* Este se alinea distinto solo el */
+    align-self: flex-start;
+}
+
+.box:nth-child(5){
+    background-color: #2a9d8f;
+    /* Este se encoge menos */
+    flex-shrink: 0;
+}
