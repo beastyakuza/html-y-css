@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/componentes/galeria/cinematic-style-view-haunted-house-with-spooky-aesthetic.jpg);
+    background-size: cover;
+}
+.container{
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 1rem 3rem;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    border: 10px solid #d4383844;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+    border: 4px solid #ae929244;
+    object-fit: cover;
+}
+.img:hover{
+    transform: scale(1.08) rotate(-1deg);
+    filter: brightness(0.4) contrast(1.3);
+    transition: all 0.4s ease;
+}
