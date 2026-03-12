@@ -1,1 +1,26 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+fieldset{
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+}
+legend{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+label, input{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    width: 100%;
+}
