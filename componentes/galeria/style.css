@@ -15,13 +15,12 @@ body{
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 1rem;
-    border: 10px solid #d4383844;
+    border: 10px solid #18161644;
 }
 .img{
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    object-fit: cover;
     cursor: pointer;
     overflow: hidden;
     transition: 0.5s;
