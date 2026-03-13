@@ -1,9 +1,9 @@
 :root {
-  --color-primario: #162f66;
+  --color-primario: #6083db;
   --color-secundario: #263846;
   --color-fondo: #F8FAFC;
   --fuente-principal: "Glass Antiqua", cursive;
-  --color-logo: #2eb4cb;
+  --color-logo: #151617;
   --color-span: #eb2525;
   --color-adicional: rgb(198, 135, 135)
 }
@@ -30,8 +30,8 @@ header{
     background-color: var(--color-primario);
 }
 .logo_letter{
-    color: var(--color-logo);
-    font-size: 2.4rem;     
+    color: var(--color-fondo);
+    font-size: 2.4rem; 
 }
 .nav{
     list-style: none;

@@ -26,8 +26,7 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: var(--color-secundario);
-    color: var(--color-fondo);
+    color: vvar(--color-secundario);
     border-radius: 0.8rem;
     border: 0.2rem solid var(--color-primario);
 }
@@ -45,6 +44,8 @@ li{
 .item_main{
     font-size: 1.6rem;
     margin: 0.5rem 0;
+    color: var(--color-adicional);
+    
 }
 .second_section{
     background-color: var(--color-secundario);
