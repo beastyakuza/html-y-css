@@ -17,3 +17,10 @@ p{
     border-radius: 50%;
     line-height: 100%;
 }
+.main_title{
+    background-color: lightcoral;
+    margin: 0;
+    padding: 30px;
+    border: 2px solid black;
+    width: 200px;
+}

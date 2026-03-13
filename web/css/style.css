@@ -1,9 +1,11 @@
 :root {
   --color-primario: #162f66;
-  --color-secundario: #10B981;
+  --color-secundario: #263846;
   --color-fondo: #F8FAFC;
   --fuente-principal: "Glass Antiqua", cursive;
   --color-logo: #2eb4cb;
+  --color-span: #eb2525;
+  --color-adicional: rgb(198, 135, 135)
 }
 *{
     margin: 0;
@@ -24,29 +26,42 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 2rem;
     background-color: var(--color-primario);
 }
 .logo_letter{
     color: var(--color-logo);
-    font-size: 2.4rem;
+    font-size: 2.4rem;     
 }
 .nav{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
+}
+.items{
+    transition: 300ms;
+}
+.items :hover{
+    color: var(--color-span);
 }
 a{
     color: #fff;
     text-decoration: none;
 }
+
 main{
-    padding: 10px;
+    margin: 0 3rem;
+}
+section{
+    margin: 0 3rem;
+    padding: 2rem;
+    width: 100%;
+    display: block;
 }
 footer{
     background-color: var(--color-primario);
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
     margin-top: auto;
 }
