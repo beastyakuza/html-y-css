@@ -1,0 +1,52 @@
+:root {
+  --color-primario: #162f66;
+  --color-secundario: #10B981;
+  --color-fondo: #F8FAFC;
+  --fuente-principal: "Glass Antiqua", cursive;
+  --color-logo: #2eb4cb;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-principal);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-primario);
+}
+.logo_letter{
+    color: var(--color-logo);
+    font-size: 2.4rem;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+main{
+    padding: 10px;
+}
+footer{
+    background-color: var(--color-primario);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
