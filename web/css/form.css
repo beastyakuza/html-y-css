@@ -73,4 +73,8 @@ option{
     option{
         font-size: 2rem;
     }
+    button{
+        padding: 15px 30px;
+        font-size: 2rem;
+    }
 }
