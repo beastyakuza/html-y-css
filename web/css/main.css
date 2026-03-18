@@ -68,12 +68,17 @@ li{
     margin-bottom: 2rem;
 }
 .article_main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    color: var(--color-adicional);
     background-color: var(--color-adicional);
     color: var(--color-fondo);
     font-size: 1.6rem;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
-    margin: 1rem 0;
+    margin: 1rem 1rem;
     border-radius: 0%.8rem;
     margin-top: 0.3rem ;
 }

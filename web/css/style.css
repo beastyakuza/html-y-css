@@ -83,10 +83,6 @@ footer{
         flex-direction: column;
         gap: 1rem;
     }
-    .nav{
-        flex-direction: column;
-        gap: 1rem;
-    }
     section{
         margin: 0 1rem;
     }
