@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <link rel="stylesheet" href="/web/css/modal.css">
+</head>
+<body>
+  <input type="checkbox" id="modalToggle" hidden>
+    <header>
+      <div id="home" class="logo">
+        <a href="./index.html"
+          ><img
+            src="/web/images/headphones-solid-full.svg"
+            alt="logo"
+            class="imgLogo"
+        /></a>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="items"><a href="./form.html">FORM</a></li>
+          <li class="items"><a href="./galery.html">GALERY</a></li>
+        </ul>
+      </nav>
+      <div class="socialMedia">
+        <a  href="https://www.facebook.com/" target="_blank"
+          ><img
+            src="/web/images/facebook-brands-solid-full.svg"
+            alt="Facebook"
+            class="imgSocial"
+        /></a>
+        <a href="https://discord.com/" target="_blank"
+          ><img
+            src="/web/images/discord-brands-solid-full.svg"
+            alt="Discord"
+            class="imgSocial"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img
+            src="/web/images/instagram-brands-solid-full.svg"
+            alt="Instagram"
+            class="imgSocial"
+        /></a>
+      </div>
+    </header id="top">
+   <main class="modalMain">
+    <label for="modalToggle" class="modalButton">GO MODAL</label>
+
+    <div class="modalDialog" role="dialog" aria-labelledby="dialogTitle">
+      <div class="modalDialogContent">
+        <label for="modalToggle" class="modalCloseBtn" aria-label="Cerrar modal">×</label>
+        <section class="modalSection" aria-label="Formulario de inicio de sesión">
+            <div class="modalImgDiv">
+              <img class="modalLogo" src="/web/images/modalImages/Netflix_Logo_RGB.png" alt="netflix image" />
+            </div>
+            <div class="modalBoxContent">
+              <h2 id="dialogTitle" class="modalTitlePrincipal">Ingresa tu info para iniciar sesión</h2>
+              <p class="modalSecondLegend">O bien, comienza con una cuenta nueva.</p>
+              <form class="modalForm" action="#" method="post">
+                <label class="modalLabel" for="email">Email o número de celular</label>
+                <input class="modalInputMenu" type="email" id="email" name="email" placeholder="Email o número celular" required />
+                <button class="modalButtonContinue" type="submit">Continuar</button>
+              </form>
+              <details class="modalHelpAccordion">
+                <summary>Obtener ayuda</summary>
+                <ul>
+                  <li class="modalItemAccordion"><a href="#">¿Olvidaste tu email o número de celular?</a></li>
+                  <li class="modalItemAccordion"><a href="#">Obtén más información sobre el inicio de sesión</a></li>
+                </ul>
+              </details>
+              <div class="modalCaptchaInfo">
+                <p>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.</p>
+                <p>La información recopilada por Google reCAPTCHA está sujeta a la Política de privacidad y a las Condiciones de servicio de Google, y se utiliza para proporcionar, mantener y mejorar el servicio de reCAPTCHA, así como para fines generales de seguridad (Google no la utiliza para personalizar publicidad).</p>
+              </div>
+            </div>
+          </section>
+        </div>
+    </main>
+    <footer>
+      <p class="font_footer">2026 BIT LEARNING. Derechos reservados.</p>
+    </footer>
+</body>
+</html>
